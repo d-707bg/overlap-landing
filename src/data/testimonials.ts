@@ -3,21 +3,21 @@ import { siteDetails } from "./siteDetails";
 
 export const testimonials: ITestimonial[] = [
     {
-        name: 'John Smith',
-        role: 'CEO at Company',
-        message: `${siteDetails.siteName}'s AI-driven insights have transformed how we approach financial planning for our clients. It's an invaluable resource in the modern financial landscape.`,
+        name: 'Marcus Chen',
+        role: 'Professional Racing Driver',
+        message: `Overlap has revolutionized my training regimen. The millisecond precision helps me identify exactly where I'm losing time and how to optimize my racing line. Essential for any serious driver.`,
         avatar: '/images/testimonial-1.webp',
     },
     {
-        name: 'Jane Doe',
-        role: 'CTO at Startup',
-        message: `As a CTO, I'm impressed by ${siteDetails.siteName}'s robust security measures and seamless integrations. It's rare to find an app that balances user-friendliness with such advanced technology.`,
+        name: 'Sarah Martinez',
+        role: 'Track Day Enthusiast',
+        message: `I use ${siteDetails.siteName} with just my smartphone and the accuracy is incredible. Being able to compare my lap times and see detailed speed analysis has taken my track days to the next level.`,
         avatar: '/images/testimonial-2.webp',
     },
     {
-        name: 'Emily Johnson',
-        role: 'Product Manager',
-        message: `${siteDetails.siteName} is revolutionizing personal finance management. Its intuitive design and powerful features make it an indispensable tool for anyone serious about financial growth.`,
+        name: 'Alex Thompson',
+        role: 'Motorsport Coach',
+        message: `${siteDetails.siteName} is a game-changer for driver development. The section-by-section analysis and performance metrics help my students understand their driving patterns and improve faster than ever before.`,
         avatar: '/images/testimonial-3.webp',
     },
 ];

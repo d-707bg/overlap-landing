@@ -1,69 +1,69 @@
-import { FiBarChart2, FiBriefcase, FiDollarSign, FiLock, FiPieChart, FiShield, FiTarget, FiTrendingUp, FiUser } from "react-icons/fi";
+import { FiBarChart2, FiTarget, FiTrendingUp, FiSmartphone, FiActivity, FiClock, FiMapPin, FiZap, FiShield } from "react-icons/fi";
 
 import { IBenefit } from "@/types"
 
 export const benefits: IBenefit[] = [
     {
-        title: "Smart Budgeting",
-        description: "Take the guesswork out of managing your money. Our AI-powered budgeting tool adapts to your lifestyle and helps you stay on track.",
+        title: "Precision Timing",
+        description: "Capture your speed and time through any section with millisecond accuracy. Perfect for racing enthusiasts who demand precision.",
         bullets: [
             {
-                title: "Intelligent Categorization",
-                description: "Automatically sorts your transactions for crystal-clear insights.",
-                icon: <FiBarChart2 size={26} />
+                title: "Millisecond Accuracy",
+                description: "Track your performance with precision timing down to the millisecond.",
+                icon: <FiClock size={26} />
             },
             {
-                title: "Customizable Goals",
-                description: "Set and track financial objectives that matter to you.",
-                icon: <FiTarget size={26} />
+                title: "Section Splitting",
+                description: "Divide any track or route into custom sections for detailed analysis.",
+                icon: <FiMapPin size={26} />
             },
             {
-                title: "Predictive Analysis",
-                description: "Get ahead of your finances with spending forecasts and alerts.",
+                title: "Speed Tracking",
+                description: "Monitor your velocity through every corner and straightaway.",
                 icon: <FiTrendingUp size={26} />
             }
         ],
         imageSrc: "/images/mockup-1.webp"
     },
     {
-        title: "Seamless Investing",
-        description: "Start building wealth today, no financial degree required. Finwise makes investing accessible and straightforward.",
+        title: "Multi-Device Support",
+        description: "Use Overlap with our dedicated tracking device or simply your smartphone. Flexibility to track anywhere, anytime.",
         bullets: [
             {
-                title: "Micro-Investing",
-                description: "Begin with as little as $1 and watch your money grow.",
-                icon: <FiDollarSign size={26} />
+                title: "Smartphone Compatible",
+                description: "Turn your phone into a powerful time tracking tool instantly.",
+                icon: <FiSmartphone size={26} />
             },
             {
-                title: "Expert Portfolios",
-                description: "Choose from investment strategies tailored to your risk tolerance.",
-                icon: <FiBriefcase size={26} />
+                title: "Dedicated Device",
+                description: "Our specialized hardware device coming soon for enhanced accuracy.",
+                icon: <FiActivity size={26} />
             },
             {
-                title: "Real-Time Performance",
-                description: "Track your investments with easy-to-understand metrics and visuals.",
-                icon: <FiPieChart size={26} />
+                title: "Real-Time Sync",
+                description: "Seamlessly sync data between all your devices automatically.",
+                icon: <FiZap size={26} />
             }
         ],
         imageSrc: "/images/mockup-2.webp"
     },
     {
-        title: "Bank-Grade Security",
-        description: "Your financial data deserves the best protection. Rest easy knowing Finwise employs cutting-edge security measures.",
+        title: "Performance Analytics",
+        description: "Analyze your runs with comprehensive data visualization. Compare laps, identify improvements, and track your progress over time.",
         bullets: [
             {
-                title: "Military-Grade Encryption",
-                description: "Your information is safeguarded with the highest level of encryption.",
-                icon: <FiLock size={26} />
+                title: "Detailed Metrics",
+                description: "Access comprehensive performance data with intuitive charts and graphs.",
+                icon: <FiBarChart2 size={26} />
             },
             {
-                title: "Biometric Authentication",
-                description: "Access your account securely with fingerprint or facial recognition.",
-                icon: <FiUser size={26} />
+                title: "Lap Comparison",
+                description: "Compare different runs to find your optimal racing line and speed.",
+                icon: <FiTarget size={26} />
             },
             {
-                title: "Real-Time Fraud Detection",
-                description: "Our system constantly monitors for suspicious activity to keep your money safe.",
+                title: "Progress Tracking",
+                description: "Monitor your improvement over time with historical data analysis.",
                 icon: <FiShield size={26} />
             }
         ],

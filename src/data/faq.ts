@@ -3,23 +3,23 @@ import { siteDetails } from "./siteDetails";
 
 export const faqs: IFAQ[] = [
     {
-        question: `Is ${siteDetails.siteName} secure?`,
-        answer: 'Absolutely. We use bank-level encryption to protect your data and never store your login information. Plus, our biometric authentication adds an extra layer of security.',
+        question: `How accurate is ${siteDetails.siteName}'s timing?`,
+        answer: 'Overlap provides millisecond precision timing accuracy. When used with our dedicated device, accuracy is within ±0.001 seconds. With smartphones, accuracy is typically within ±0.01 seconds depending on GPS conditions.',
     },
     {
-        question: `Can I use ${siteDetails.siteName} on multiple devices?`,
-        answer: 'Absolutely! Your Finwise account syncs seamlessly across all your devices - smartphone, tablet, and computer.',
+        question: `Do I need the dedicated device to use ${siteDetails.siteName}?`,
+        answer: 'Not at all! Overlap works perfectly with just your smartphone. The dedicated device (coming soon) will offer enhanced accuracy and additional features, but the core functionality is available to all users immediately.',
     },
     {
-        question: 'Can I connect all my bank accounts?',
-        answer: `Yes! ${siteDetails.siteName} supports connections with over 10,000 financial institutions worldwide. Simply log in through our secure portal to link your accounts.`
+        question: 'What types of vehicles can I track with Overlap?',
+        answer: `${siteDetails.siteName} works with any vehicle - cars, motorcycles, go-karts, bicycles, and more. As long as you can carry your smartphone or mount our device, you can track your performance.`
     },
     {
-        question: 'Do I need any financial expertise to use the investing features?',
-        answer: 'Not at all! Our expert-curated portfolios and educational resources make investing accessible to everyone, regardless of experience level.',
+        question: 'Can I create custom track sections?',
+        answer: 'Yes! Overlap allows you to define unlimited custom sections on any track or route. Split corners, straights, or create complex multi-section analysis zones to focus on specific areas of improvement.',
     },
     {
-        question: 'What if I need help using the app?',
-        answer: 'Our dedicated support team is available 24/7 via chat or email. Plus, we offer extensive in-app tutorials and a comprehensive knowledge base to help you make the most of Finwise.'
+        question: 'Does Overlap work without internet connection?',
+        answer: 'Yes! Overlap can record data offline and sync when you regain connection. All timing and tracking features work perfectly without internet, ensuring you never miss a session regardless of track location.'
     }
 ];

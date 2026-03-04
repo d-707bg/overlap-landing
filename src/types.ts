@@ -1,6 +1,8 @@
 export interface IMenuItem {
     text: string;
     url: string;
+    hasDropdown?: boolean;
+    dropdownItems?: { text: string; url: string }[];
 }
 
 export interface IBenefit {
