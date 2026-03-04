@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { testimonials } from "@/data/testimonials";
-import TestimonialCarBackground from "./TestimonialCarBackground";
+import TestimonialCarBackground from "./backgrounds/TestimonialCarBackground";
 
 const Testimonials: React.FC = () => {
   return (

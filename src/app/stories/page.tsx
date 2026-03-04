@@ -1,6 +1,6 @@
 import Container from "@/components/Container";
 import Section from "@/components/Section";
-import SectionCarBackground from "@/components/SectionCarBackground";
+import SectionCarBackground from "@/components/backgrounds/SectionCarBackground";
 
 const StoriesPage: React.FC = () => {
   const stories = [

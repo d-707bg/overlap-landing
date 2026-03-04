@@ -21,10 +21,8 @@ export const menuItems: IMenuItem[] = [
     url: "/about",
     hasDropdown: true,
     dropdownItems: [
-      { text: "Our Story", url: "/about#story" },
-      { text: "Team", url: "/about#team" },
-      { text: "Mission", url: "/about#mission" },
-      { text: "Technology", url: "/about#about-overlap" },
+      { text: "About Us", url: "/about" },
+      { text: "Technology", url: "/about/technology" },
     ],
   },
   {

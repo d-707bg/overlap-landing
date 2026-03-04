@@ -1,5 +1,5 @@
 import { stats } from "@/data/stats"
-import SectionCarBackground from "./SectionCarBackground"
+import SectionCarBackground from "./backgrounds/SectionCarBackground"
 
 const Stats: React.FC = () => {
     return (

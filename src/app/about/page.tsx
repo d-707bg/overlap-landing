@@ -1,6 +1,6 @@
 import Container from "@/components/Container";
 import Section from "@/components/Section";
-import SectionCarBackground from "@/components/SectionCarBackground";
+import SectionCarBackground from "@/components/backgrounds/SectionCarBackground";
 
 const AboutPage: React.FC = () => {
   return (
@@ -112,21 +112,21 @@ const AboutPage: React.FC = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
-                  name: "John Driver",
+                  name: "Ivaylo Nedev",
                   role: "CEO & Founder",
                   background:
                     "Former professional driver with 10+ years in motorsports engineering",
                   expertise: "Racing strategy, telemetry systems",
                 },
                 {
-                  name: "Sarah Tech",
+                  name: "Daniel Todorov",
                   role: "CTO & Lead Developer",
                   background:
                     "Software architect with experience in real-time data processing",
                   expertise: "Mobile development, AI analytics",
                 },
                 {
-                  name: "Mike Rodriguez",
+                  name: "Kaloyan Stefanov",
                   role: "Head of Product",
                   background:
                     "Product manager with a background in automotive technology",

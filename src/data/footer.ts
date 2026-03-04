@@ -20,7 +20,7 @@ export const footerDetails: {
     },
   ],
   email: "support@overlap.app",
-  telephone: "+1 (555) 123-4567",
+  telephone: "",
   socials: {
     // github: 'https://github.com',
     // x: 'https://twitter.com/x',

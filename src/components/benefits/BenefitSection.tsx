@@ -5,7 +5,7 @@ import { motion, Variants } from "framer-motion"
 
 import BenefitBullet from "./BenefitBullet";
 import SectionTitle from "../SectionTitle";
-import SectionCarBackground from "../SectionCarBackground";
+import SectionCarBackground from "../backgrounds/SectionCarBackground";
 import { IBenefit } from "@/types";
 
 interface Props {

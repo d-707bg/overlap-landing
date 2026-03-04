@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import AppStoreButton from './AppStoreButton';
 import PlayStoreButton from './PlayStoreButton';
-import CarBackground from './CarBackground';
+import CarBackground from './backgrounds/CarBackground';
 
 import { heroDetails } from '@/data/hero';
 
@@ -15,8 +15,7 @@ const Hero: React.FC = () => {
         >
             <CarBackground />
 
-            <div className="absolute left-0 right-0 bottom-0 backdrop-blur-[2px] h-40 bg-gradient-to-b from-transparent via-[rgba(45,110,184,0.1)] to-[rgba(30,74,128,0.15)]">
-            </div>
+            <div className="absolute left-0 right-0 bottom-0 h-52 bg-gradient-to-b from-transparent to-[#FCFDFF] z-20 pointer-events-none"> </div>
 
             <div className="text-center">
                 <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto">{heroDetails.heading}</h1>
@@ -34,7 +33,7 @@ const Hero: React.FC = () => {
                     priority={true}
                     unoptimized={true}
                     alt="app mockup"
-                    className='relative mt-12 md:mt-16 mx-auto z-10'
+                    className='relative mt-2 md:mt-16 mx-auto z-10'
                 />
             </div>
         </section>
