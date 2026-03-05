@@ -23,29 +23,7 @@ export const benefits: IBenefit[] = [
                 icon: <FiTrendingUp size={26} />
             }
         ],
-        imageSrc: "/images/mockup-1.webp"
-    },
-    {
-        title: "Multi-Device Support",
-        description: "Use Overlap with our dedicated tracking device or simply your smartphone. Flexibility to track anywhere, anytime.",
-        bullets: [
-            {
-                title: "Smartphone Compatible",
-                description: "Turn your phone into a powerful time tracking tool instantly.",
-                icon: <FiSmartphone size={26} />
-            },
-            {
-                title: "Dedicated Device",
-                description: "Our specialized hardware device coming soon for enhanced accuracy.",
-                icon: <FiActivity size={26} />
-            },
-            {
-                title: "Real-Time Sync",
-                description: "Seamlessly sync data between all your devices automatically.",
-                icon: <FiZap size={26} />
-            }
-        ],
-        imageSrc: "/images/mockup-2.webp"
+        imageSrc: "/images/mockup-1.png"
     },
     {
         title: "Performance Analytics",
@@ -67,6 +45,6 @@ export const benefits: IBenefit[] = [
                 icon: <FiShield size={26} />
             }
         ],
-        imageSrc: "/images/mockup-1.webp"
+        imageSrc: "/images/mockup-2.png"
     },
 ]
