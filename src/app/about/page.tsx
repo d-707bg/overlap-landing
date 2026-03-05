@@ -244,7 +244,7 @@ const AboutPage = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
           <p className="text-muted-foreground mb-8">
-            Have questions about Overlap? We're here to help you master every segment.
+            Have questions about Overlap? We&apos;re here to help you master every segment.
           </p>
           <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200">
             <CardContent className="p-8">
