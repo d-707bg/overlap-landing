@@ -149,7 +149,7 @@ export default function PrivacyPolicy() {
                 please contact us:
               </p>
               <div className="space-y-2 text-muted-foreground">
-                <p>• Email: privacy@overlap.app</p>
+                <p>• Email: overlap.contact@yahoo.com</p>
                 <p>• Website: overlap.app/contact</p>
               </div>
             </CardContent>

@@ -19,7 +19,7 @@ export const footerDetails: {
       url: "/privacy-policy",
     },
   ],
-  email: "support@overlap.app",
+  email: "overlap.contact@yahoo.com",
   telephone: "",
   socials: {
     // github: 'https://github.com',

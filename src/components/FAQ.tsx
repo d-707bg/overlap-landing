@@ -17,7 +17,7 @@ const FAQ: React.FC = () => {
                     <p className="lg:mt-10 text-foreground-accent text-center lg:text-left">
                         Ask us anything!
                     </p>
-                    <a href="mailto:support@overlap.app" className="mt-3 block text-xl lg:text-4xl text-secondary font-semibold hover:underline text-center lg:text-left">support@overlap.app</a>
+                    <a href="mailto:overlap.contact@yahoo.com" className="mt-3 block text-xl lg:text-4xl text-secondary font-semibold hover:underline text-center lg:text-left">overlap.contact@yahoo.com</a>
                 </div>
 
                 <div className="w-full lg:max-w-2xl mx-auto border-b">

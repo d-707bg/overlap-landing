@@ -24,10 +24,10 @@ const SupportPage: React.FC = () => {
                   📧 Email Support
                 </h4>
                 <a 
-                  href="mailto:support@overlap.app" 
+                  href="mailto:overlap.contact@yahoo.com" 
                   className="text-primary hover:text-blue-600 text-lg font-medium"
                 >
-                  support@overlap.app
+                  overlap.contact@yahoo.com
                 </a>
                 <p className="text-foreground-accent text-sm mt-2">
                   We typically respond within 24 hours on business days

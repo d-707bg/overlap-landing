@@ -17,7 +17,7 @@ const AboutPage = () => {
       name: "Daniel Todorov", 
       role: "CTO & Developer",
       background: "AI Developer with deep expertise in machine learning algorithms and data analytics. Passionate about leveraging artificial intelligence to solve complex problems and create intelligent systems that learn and adapt.",
-      expertise: ["Machine Learning", "AI Analytics", "Data Science"],
+      expertise: ["Machine Learning", "AI Analytics", "UI/UX Design"],
       avatar: "DT"
     },
     {
@@ -236,6 +236,32 @@ const AboutPage = () => {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
+          <p className="text-muted-foreground mb-8">
+            Have questions about Overlap? We're here to help you master every segment.
+          </p>
+          <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200">
+            <CardContent className="p-8">
+              <div className="text-center">
+                <h3 className="text-xl font-semibold mb-4">Support Email</h3>
+                <a 
+                  href="mailto:overlap.contact@yahoo.com"
+                  className="text-primary hover:text-blue-600 text-lg font-medium"
+                >
+                  overlap.contact@yahoo.com
+                </a>
+                <p className="text-muted-foreground text-sm mt-2">
+                  We typically respond within 24 hours on business days
+                </p>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
     </div>
