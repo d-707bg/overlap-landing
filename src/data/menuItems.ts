@@ -12,8 +12,6 @@ export const menuItems: IMenuItem[] = [
     dropdownItems: [
       { text: "Time Tracking", url: "/features/time-tracking" },
       { text: "Analytics", url: "/features/analytics" },
-      { text: "Telemetry", url: "/features/telemetry" },
-      { text: "Multi-Device", url: "/features/multi-device" },
     ],
   },
   {
@@ -30,9 +28,6 @@ export const menuItems: IMenuItem[] = [
     url: "/resources",
     hasDropdown: true,
     dropdownItems: [
-      { text: "Stories", url: "/stories" },
-      { text: "Blog", url: "/resources/blog" },
-      { text: "Tutorials", url: "/resources/tutorials" },
       { text: "Support", url: "/resources/support" },
     ],
   },

@@ -15,25 +15,19 @@ const HomePage: React.FC = () => {
       <Container className="py-20">
         <Benefits />
 
+        {/*  Testimonials section */}
         {/*<Section*/}
-        {/*  id="pricing"*/}
-        {/*  title="Pricing"*/}
-        {/*  description="Simple, transparent pricing. No surprises."*/}
+        {/*  id="testimonials"*/}
+        {/*  title="What Our Clients Say"*/}
+        {/*  description="Hear from those who have partnered with us."*/}
         {/*>*/}
-        {/*  <Pricing />*/}
+        {/*  <Testimonials />*/}
         {/*</Section>*/}
-
-        <Section
-          id="testimonials"
-          title="What Our Clients Say"
-          description="Hear from those who have partnered with us."
-        >
-          <Testimonials />
-        </Section>
 
         <FAQ />
 
-        <Stats />
+        {/*  Statistics section*/}
+        {/*<Stats />*/}
 
         <CTA />
       </Container>

@@ -6,7 +6,7 @@ const BlogPage: React.FC = () => {
   const blogPosts = [
     {
       title: "How to Analyze Your First Telemetry Data",
-      excerpt: "Learn the basics of reading telemetry data and identifying key performance indicators.",
+      excerpt: "Learn the basics of reading _telemetry data and identifying key performance indicators.",
       date: "March 15, 2024",
       author: "Sarah Tech",
       category: "Tutorial"

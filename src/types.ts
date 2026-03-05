@@ -50,6 +50,7 @@ export interface ISocials {
     threads?: string;
     twitter?: string;
     youtube?: string;
+    discord?:string;
     x?: string;
     [key: string]: string | undefined;
 }
