@@ -15,7 +15,7 @@ const SupportPage: React.FC = () => {
               We&apos;re here to help
             </h3>
             <p className="text-foreground-accent mb-8">
-              Have questions or need assistance? Reach out to us via email and we'll get back to you as soon as possible.
+              Have questions or need assistance? Reach out to us via email and we&apos;ll get back to you as soon as possible.
             </p>
             
             <div className="space-y-6">

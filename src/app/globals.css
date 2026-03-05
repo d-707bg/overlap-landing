@@ -63,6 +63,22 @@ h1, h2, h3, h4, h5, h6 {
   100% { stroke-dashoffset: -60; }
 }
 
+@keyframes road-dash {
+  0% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -70; }
+}
+
+@keyframes road-dash-slow {
+  0% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -56; }
+}
+
+@keyframes speed-streak {
+  0% { opacity: 0; transform: translateX(0); }
+  20% { opacity: 0.6; }
+  100% { opacity: 0; transform: translateX(-60px); }
+}
+
 @keyframes speed-blur {
   0%, 100% { opacity: 0.06; transform: translateX(0); }
   50% { opacity: 0.12; transform: translateX(20px); }
@@ -75,6 +91,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .racing-line-animate {
   animation: racing-line 8s linear infinite;
+}
+
+.road-dash-animate {
+  animation: road-dash 4s linear infinite;
+}
+
+.road-dash-animate-slow {
+  animation: road-dash-slow 6s linear infinite;
+}
+
+.speed-streak-animate {
+  animation: speed-streak 3.5s ease-out infinite;
 }
 
 .speed-blur-animate {

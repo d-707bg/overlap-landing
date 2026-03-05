@@ -42,7 +42,7 @@ const CTACarBackground: React.FC = () => {
             </svg>
             
             {/* Checkered flag patterns */}
-            <div className="absolute top-0 left-0 w-40 h-40 opacity-15 checkered-flag-animate">
+            <div className="absolute top-0 left-0 w-40 h-40 opacity-15">
                 <div className="grid grid-cols-8 grid-rows-8 w-full h-full">
                     {Array.from({ length: 64 }).map((_, i) => (
                         <div
@@ -53,7 +53,7 @@ const CTACarBackground: React.FC = () => {
                 </div>
             </div>
             
-            <div className="absolute top-0 right-0 w-40 h-40 opacity-15 checkered-flag-animate" style={{ animationDelay: '1s' }}>
+            <div className="absolute top-0 right-0 w-40 h-40 opacity-15">
                 <div className="grid grid-cols-8 grid-rows-8 w-full h-full">
                     {Array.from({ length: 64 }).map((_, i) => (
                         <div
@@ -64,7 +64,7 @@ const CTACarBackground: React.FC = () => {
                 </div>
             </div>
             
-            <div className="absolute bottom-0 left-0 w-32 h-32 opacity-10 checkered-flag-animate" style={{ animationDelay: '2.5s' }}>
+            <div className="absolute bottom-0 left-0 w-32 h-32 opacity-10">
                 <div className="grid grid-cols-6 grid-rows-6 w-full h-full">
                     {Array.from({ length: 36 }).map((_, i) => (
                         <div
@@ -75,7 +75,7 @@ const CTACarBackground: React.FC = () => {
                 </div>
             </div>
             
-            <div className="absolute bottom-0 right-0 w-32 h-32 opacity-10 checkered-flag-animate" style={{ animationDelay: '3.5s' }}>
+            <div className="absolute bottom-0 right-0 w-32 h-32 opacity-10">
                 <div className="grid grid-cols-6 grid-rows-6 w-full h-full">
                     {Array.from({ length: 36 }).map((_, i) => (
                         <div
@@ -87,9 +87,9 @@ const CTACarBackground: React.FC = () => {
             </div>
             
             {/* Speed blur effects */}
-            <div className="absolute left-0 top-1/4 w-48 h-2 bg-gradient-to-r from-white to-transparent opacity-20 blur-xl speed-blur-animate" />
-            <div className="absolute right-0 top-1/3 w-64 h-1 bg-gradient-to-l from-white to-transparent opacity-15 blur-lg speed-blur-animate" style={{ animationDelay: '1s' }} />
-            <div className="absolute left-1/3 bottom-1/4 w-40 h-1 bg-gradient-to-r from-white to-transparent opacity-10 blur-md speed-blur-animate" style={{ animationDelay: '2s' }} />
+            <div className="absolute left-0 top-1/4 w-48 h-2 bg-gradient-to-r from-white to-transparent opacity-20 blur-xl" />
+            <div className="absolute right-0 top-1/3 w-64 h-1 bg-gradient-to-l from-white to-transparent opacity-15 blur-lg" />
+            <div className="absolute left-1/3 bottom-1/4 w-40 h-1 bg-gradient-to-r from-white to-transparent opacity-10 blur-md" />
         </div>
     );
 };

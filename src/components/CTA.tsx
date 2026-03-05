@@ -1,7 +1,5 @@
 import { ctaDetails } from "@/data/cta"
 
-import AppStoreButton from "./AppStoreButton"
-import PlayStoreButton from "./PlayStoreButton"
 import CTACarBackground from "./backgrounds/CTACarBackground"
 import React from "react";
 

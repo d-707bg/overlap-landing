@@ -2,8 +2,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { LineChart, Line, AreaChart, Area, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 
 const AnalyticsPage = () => {
   // Sample data for charts
@@ -61,7 +60,7 @@ const AnalyticsPage = () => {
           <CardHeader>
             <CardTitle className="text-blue-900">📊 How Your Real Analytics Would Look</CardTitle>
             <CardDescription className="text-blue-700">
-              This is a preview of the powerful analytics you'll get in the Overlap app
+              This is a preview of the powerful analytics you&apos;ll get in the Overlap app
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4 text-blue-800">
@@ -98,7 +97,7 @@ const AnalyticsPage = () => {
             <div className="pt-4 border-t border-blue-200">
               <p className="text-sm font-medium">
                 💡 <strong>Pro Tip:</strong> The charts above show sample data. In the real app, 
-                you'll see your actual driving data updated in real-time as you record sessions!
+                you&apos;ll see your actual driving data updated in real-time as you record sessions!
               </p>
             </div>
           </CardContent>

@@ -1,11 +1,9 @@
 import Hero from "@/components/Hero";
-import Testimonials from "@/components/Testimonials";
-import FAQ from "@/components/FAQ";
 import Benefits from "@/components/benefits/Benefits";
 import Container from "@/components/Container";
-import Section from "@/components/Section";
-import Stats from "@/components/Stats";
+// import Section from "@/components/Section";
 import CTA from "@/components/CTA";
+import FAQ from "@/components/FAQ";
 
 const HomePage: React.FC = () => {
   return (

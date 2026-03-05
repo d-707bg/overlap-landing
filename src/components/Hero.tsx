@@ -1,8 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 
-import AppStoreButton from './AppStoreButton';
-import PlayStoreButton from './PlayStoreButton';
 import CarBackground from './backgrounds/CarBackground';
 
 import { heroDetails } from '@/data/hero';
