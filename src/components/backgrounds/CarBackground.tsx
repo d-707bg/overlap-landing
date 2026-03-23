@@ -2,7 +2,7 @@ import React from 'react';
 
 const CarBackground: React.FC = () => {
     return (
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <svg
                 className="absolute inset-0 w-full h-full"
                 viewBox="0 0 1920 1080"
