@@ -3,16 +3,20 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import { LineChart, Line } from "@/components/charts/line/line-chart";
+import { Grid } from "@/components/charts/shared/grid";
+import { ChartTooltip } from "@/components/charts/tooltip/chart-tooltip";
+import { XAxis as ChartXAxis } from "@/components/charts/shared/x-axis";
 
 const TimeTrackingPage = () => {
   // Sample data for charts
   const sessionData = [
-    { lap: 1, time: 78.5, sector1: 28.2, sector2: 32.1, sector3: 18.2 },
-    { lap: 2, time: 77.8, sector1: 27.9, sector2: 31.8, sector3: 18.1 },
-    { lap: 3, time: 76.9, sector1: 27.5, sector2: 31.2, sector3: 18.2 },
-    { lap: 4, time: 77.2, sector1: 27.8, sector2: 31.5, sector3: 17.9 },
-    { lap: 5, time: 76.5, sector1: 27.6, sector2: 31.0, sector3: 17.9 },
+    { date: new Date("2024-03-01"), lap: 1, time: 78.5, sector1: 28.2, sector2: 32.1, sector3: 18.2 },
+    { date: new Date("2024-03-02"), lap: 2, time: 77.8, sector1: 27.9, sector2: 31.8, sector3: 18.1 },
+    { date: new Date("2024-03-03"), lap: 3, time: 76.9, sector1: 27.5, sector2: 31.2, sector3: 18.2 },
+    { date: new Date("2024-03-04"), lap: 4, time: 77.2, sector1: 27.8, sector2: 31.5, sector3: 17.9 },
+    { date: new Date("2024-03-05"), lap: 5, time: 76.5, sector1: 27.6, sector2: 31.0, sector3: 17.9 },
   ];
 
   const consistencyData = [
@@ -189,19 +193,22 @@ const TimeTrackingPage = () => {
               <CardDescription>Track your performance across multiple laps</CardDescription>
             </CardHeader>
             <CardContent>
-              <ResponsiveContainer width="100%" height={300}>
-                <LineChart data={sessionData}>
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="lap" />
-                  <YAxis />
-                  <Tooltip />
-                  <Legend />
-                  <Line type="monotone" dataKey="time" stroke="#3b82f6" name="Lap Time" strokeWidth={2} />
-                  <Line type="monotone" dataKey="sector1" stroke="#10b981" name="Sector 1" strokeDasharray="5 5" />
-                  <Line type="monotone" dataKey="sector2" stroke="#f59e0b" name="Sector 2" strokeDasharray="5 5" />
-                  <Line type="monotone" dataKey="sector3" stroke="#ef4444" name="Sector 3" strokeDasharray="5 5" />
-                </LineChart>
-              </ResponsiveContainer>
+              <LineChart data={sessionData} className="[--chart-line-primary:#3b82f6]">
+                <Grid horizontal strokeDasharray="4,4" />
+                <Line dataKey="time" stroke="#3b82f6" strokeWidth={2.5} />
+                <Line dataKey="sector1" stroke="#10b981" strokeWidth={2} />
+                <Line dataKey="sector2" stroke="#f59e0b" strokeWidth={2} />
+                <Line dataKey="sector3" stroke="#ef4444" strokeWidth={2} />
+                <ChartXAxis numTicks={5} />
+                <ChartTooltip
+                  rows={(point) => [
+                    { color: "#3b82f6", label: "Lap Time", value: typeof point.time === "number" ? `${point.time}s` : "" },
+                    { color: "#10b981", label: "Sector 1", value: typeof point.sector1 === "number" ? `${point.sector1}s` : "" },
+                    { color: "#f59e0b", label: "Sector 2", value: typeof point.sector2 === "number" ? `${point.sector2}s` : "" },
+                    { color: "#ef4444", label: "Sector 3", value: typeof point.sector3 === "number" ? `${point.sector3}s` : "" },
+                  ]}
+                />
+              </LineChart>
             </CardContent>
           </Card>
 

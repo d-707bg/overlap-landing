@@ -2,19 +2,23 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import { BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart as RechartsLineChart, Line as RechartsLine } from "recharts";
+import { LineChart, Line } from "@/components/charts/line/line-chart";
+import { Grid } from "@/components/charts/shared/grid";
+import { ChartTooltip } from "@/components/charts/tooltip/chart-tooltip";
+import { XAxis as ChartXAxis } from "@/components/charts/shared/x-axis";
 
 const AnalyticsPage = () => {
   // Sample data for charts
   const lapTimeData = [
-    { lap: 1, time: 78.5, optimal: 76.2 },
-    { lap: 2, time: 77.8, optimal: 76.2 },
-    { lap: 3, time: 76.9, optimal: 76.2 },
-    { lap: 4, time: 77.2, optimal: 76.2 },
-    { lap: 5, time: 76.5, optimal: 76.2 },
-    { lap: 6, time: 76.3, optimal: 76.2 },
-    { lap: 7, time: 76.8, optimal: 76.2 },
-    { lap: 8, time: 76.1, optimal: 76.2 },
+    { date: new Date("2024-03-01"), lap: 1, time: 78.5, optimal: 76.2 },
+    { date: new Date("2024-03-02"), lap: 2, time: 77.8, optimal: 76.2 },
+    { date: new Date("2024-03-03"), lap: 3, time: 76.9, optimal: 76.2 },
+    { date: new Date("2024-03-04"), lap: 4, time: 77.2, optimal: 76.2 },
+    { date: new Date("2024-03-05"), lap: 5, time: 76.5, optimal: 76.2 },
+    { date: new Date("2024-03-06"), lap: 6, time: 76.3, optimal: 76.2 },
+    { date: new Date("2024-03-07"), lap: 7, time: 76.8, optimal: 76.2 },
+    { date: new Date("2024-03-08"), lap: 8, time: 76.1, optimal: 76.2 },
   ];
 
   const sectorPerformance = [
@@ -166,17 +170,18 @@ const AnalyticsPage = () => {
               <CardDescription>Comparison with optimal lap time</CardDescription>
             </CardHeader>
             <CardContent>
-              <ResponsiveContainer width="100%" height={300}>
-                <LineChart data={lapTimeData}>
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="lap" />
-                  <YAxis />
-                  <Tooltip />
-                  <Legend />
-                  <Line type="monotone" dataKey="time" stroke="#3b82f6" name="Lap Time" strokeWidth={2} />
-                  <Line type="monotone" dataKey="optimal" stroke="#10b981" name="Optimal" strokeDasharray="5 5" />
-                </LineChart>
-              </ResponsiveContainer>
+              <LineChart data={lapTimeData} className="[--chart-line-primary:#3b82f6]">
+                <Grid horizontal strokeDasharray="4,4" />
+                <Line dataKey="time" stroke="#3b82f6" strokeWidth={2.5} />
+                <Line dataKey="optimal" stroke="#10b981" strokeWidth={2} animate={false} showHighlight={false} />
+                <ChartXAxis numTicks={8} />
+                <ChartTooltip
+                  rows={(point) => [
+                    { color: "#3b82f6", label: "Lap Time", value: typeof point.time === "number" ? `${point.time}s` : "" },
+                    { color: "#10b981", label: "Optimal", value: typeof point.optimal === "number" ? `${point.optimal}s` : "" },
+                  ]}
+                />
+              </LineChart>
             </CardContent>
           </Card>
 
@@ -238,16 +243,16 @@ const AnalyticsPage = () => {
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={250}>
-                <LineChart data={speedTraceData}>
+                <RechartsLineChart data={speedTraceData}>
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="distance" />
                   <YAxis />
                   <Tooltip />
                   <Legend />
-                  <Line type="monotone" dataKey="speed" stroke="#3b82f6" name="Speed (km/h)" strokeWidth={2} />
-                  <Line type="monotone" dataKey="throttle" stroke="#10b981" name="Throttle (%)" strokeDasharray="5 5" />
-                  <Line type="monotone" dataKey="brake" stroke="#ef4444" name="Brake (%)" strokeDasharray="3 3" />
-                </LineChart>
+                  <RechartsLine type="monotone" dataKey="speed" stroke="#3b82f6" name="Speed (km/h)" strokeWidth={2} />
+                  <RechartsLine type="monotone" dataKey="throttle" stroke="#10b981" name="Throttle (%)" strokeDasharray="5 5" />
+                  <RechartsLine type="monotone" dataKey="brake" stroke="#ef4444" name="Brake (%)" strokeDasharray="3 3" />
+                </RechartsLineChart>
               </ResponsiveContainer>
             </CardContent>
           </Card>
