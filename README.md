@@ -1,6 +1,8 @@
 # Overlap - Landing Page
 
-Overlap is a landing page built with **Next.js** and **Tailwind CSS**.
+![Next.js](https://badgen.net/badge/Next.js/15/black?icon=nextjs)
+![TypeScript](https://badgen.net/badge/TypeScript/TS/007ACC?icon=typescript)
+![Tailwind CSS](https://badgen.net/badge/Tailwind%20CSS/CSS/38B2AC?icon=tailwindcss)
 
 
 ## Features
